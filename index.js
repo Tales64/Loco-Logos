@@ -1,3 +1,7 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+const { Circle, Square, Triangle } = require('./lib/shapes');
+
 const questions = [
     {
         type: "input",
@@ -10,14 +14,14 @@ const questions = [
         message: "TEXT COLOR: Enter a color keyword (OR a hexadecimal number):",
     },
     {
-        type: "input",
+        type: "list",
         name: "shape",
-        message: "SHAPE COLOR: Enter a color keyword (OR a hexadecimal number):",
+        message: "Choose which shape you would like?",
+        choices: ["Circle", "Square", "Triangle"],
     },
     {
-        type: "list",
-        name: "pixel-image",
-        message: "Choose which Pixel Image you would like?",
-        choices: ["Circle", "Square", "Triangle"],
+        type: "input",
+        name: "shape-color",
+        message: "SHAPE COLOR: Enter a color keyword (OR a hexadecimal number):",
     },
 ];

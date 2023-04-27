@@ -1,0 +1,28 @@
+{
+  "name": "loco-logos",
+  "version": "1.0.0",
+  "description": "Homework Logos Maker",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tales64/Loco-Logos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tales64/Loco-Logos/issues"
+  },
+  "homepage": "https://github.com/Tales64/Loco-Logos#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "inquirer": "8.2.4",
+    "jest": "^29.5.0"
+  }
+}
